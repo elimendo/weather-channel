@@ -1,0 +1,22 @@
+
+
+header {
+    border: 3px black solid;
+}
+
+
+main {
+    border: 3px black solid;
+    display: flex;
+}
+
+.city-search {
+    border: 3px blue solid;
+    flex: 1;
+    
+}
+
+.all-weather {
+    border: 3px blue solid;
+    flex: 3;
+}
