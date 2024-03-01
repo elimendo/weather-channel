@@ -53,7 +53,17 @@ function fiveDay (lat, lon){
 function renderCurrentWeather(data){
   const parentDiv = document.querySelector('.current')
   parentDiv.innerHTML=""
-  const clone= document.getElementById("currentWeatherData").content.cloneNode(true)
+  const clone= document.getElementById
+  ("currentWeatherData").content.cloneNode(true);
+  clone.getElementById("cityName").textContent= data.name;
+
+  clone.getElementById('Date').textContent=new Date(data.dt * 1000).toLocaleDateString();
+
+  clone.getElementById("temp").textContent=data.main.temp;
+
+  clone.getElementById("wind").textContent=data.wind.speed;
+
+  clone.getElementById("humidity").textContent=data.main.humidity;
   console.log(clone)
   parentDiv.append(clone)
 }
