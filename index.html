@@ -14,19 +14,26 @@
     <main>
       <section class="city-search">
         <h2>City Search</h2>
-        <form id="cityForm"> 
-            <input type="text" placeholder="Search for City"/>
-            <button tpye="submit">Search</button>
+        <form id="cityForm">
+          <input type="text" placeholder="Search for City" />
+          <button tpye="submit">Search</button>
         </form>
       </section>
       <section class="all-weather">
         <div class="current">
-          <p>current</p>
         </div>
         <div class="forecast">
           <p>forecast</p>
         </div>
       </section>
+      <template id="currentWeatherData">
+        <h2>
+          <span id="cityName">City Name</span> <span id="Date">Date</span>
+        </h2>
+        <h3>Temperature:<span id=""></span></h3>
+        <h3>Wind:<span id=""></span></h3>
+        <h3>Humidity:<span id=""></span></h3>
+      </template>
     </main>
 
     <script src="script.js"></script>
